@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="icon" href="./images/logo.jpg" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="about">
+        <form action="/">
+            <input type="text" id="firstName" placeholder="Insert First Name" value="">
+            <input type="text" id="lastName" placeholder="Insert Last Name" value="">
+            <input type="number" id="age" placeholder="Insert Age" value="">
+            <input type="text" id="country" placeholder="Insert Country" value="">
+                <div id="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" name="genedr" id="male" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="genedr" id="female" value="female" >
+                </div>
+            <button type="button" onclick="pecati()" value="">Print</button>
+        </form>
+        <div id="poraka"></div>
+    </div>
+    <div id="type1">
+        <h3>Calculator Type 1</h3>
+        <form action="/">
+            <input type="number" id="firstNumber" placeholder="Input firs number" value="">
+            <input type="number" id="secondNumber" placeholder="Input second number" value="">
+            <input type="text" id="mathSymbols" placeholder="Couse math symbol, example : + , - , * , / " pattern="[+-*/]*" value="">
+            <button type="button" onclick="calculate()" value="">Calculate</button>
+        </form>
+        <div id="resultOfCalculating"></div>
+    </div>
+    <div id="type2">
+        <h3>Calculator Type 2</h3>
+        <form>
+            <input type="number" placeholder="Input firs number" id="num1" />
+            <input type="number" placeholder="Input second number" id="num2" />
+            <select id="symbol" name="symbol" >
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+            </select>
+            <button type="button" onclick="calculate1()">Calculate</button>
+        </form>  
+        <div id="resultOf"></div>
+    </div>
+    <script src="./js/formAndCalculators.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #d5bdaf;
+}
+#about, #type1, #type2{
+    height: 50vh;
+    padding: 20px;
+    min-width: 400px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    background-color: #f5ebe0;
+    border-radius: 10px;
+}
+h3{
+    color: #9a8c98;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+}
+button{
+    max-width: 40%;
+    background-color: #edede9;
+    border: solid #d6ccc2;
+    border-radius: 10px;
+}
+#gender{
+    display: flex;
+    gap: 30px;
+}
+input, select{
+    border: none;
+    background-color: #f5ebe0;
+    border-bottom: 2px solid #d6ccc2;
+    border-radius: 10px;
+    padding: 0 10px;
+}
